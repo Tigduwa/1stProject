@@ -1,2 +1,4 @@
 time.com
 www.time.com
+netflix.com
+www.netflix.com
