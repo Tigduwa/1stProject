@@ -1,3 +1,2 @@
-0.0.0.0 netflix.com/ph
-0.0.0.0 www.netflix.com/ph
-0.0.0.0 time.com
+time.com
+www.time.com
