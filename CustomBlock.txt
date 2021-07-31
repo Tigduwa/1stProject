@@ -1,5 +1,5 @@
-youtube.com
-facebook.com
+.youtube.com
+.facebook.com
 netflix.com
 steampowered.com
 wpc2024.live
