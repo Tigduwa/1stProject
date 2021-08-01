@@ -98,3 +98,5 @@ myflixer.pro
 myflixer.life
 twitter.com
 tiktok.com
+genmirror.com
+ytmirror.com
