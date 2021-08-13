@@ -1,7 +1,11 @@
 youtube.com
+www.youtube.com
 facebook.com
+www.facebook.com
 netflix.com
+www.netflix.com
 steampowered.com
+www.steampowered.com
 wpc2024.live
 wpc2025.live
 wpc2026.live
