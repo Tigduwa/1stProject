@@ -3225,3 +3225,4 @@ zh-cn.socialclub.rockstargames.com
 zh.socialclub.rockstargames.com
 getwatch.in
 9anime.ru
+hurawatch.ru
