@@ -3226,3 +3226,6 @@ zh.socialclub.rockstargames.com
 getwatch.in
 9anime.ru
 hurawatch.ru
+flixtor.stream
+myflixer.link
+myflixer.run
