@@ -3234,3 +3234,4 @@ messenger.com
 spotify.com
 shopee.ph
 lazada.com
+lazada.com.ph
