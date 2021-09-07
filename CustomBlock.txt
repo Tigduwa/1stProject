@@ -3230,3 +3230,7 @@ flixtor.stream
 myflixer.link
 myflixer.run
 gogomovies.to
+messenger.com
+spotify.com
+shopee.ph
+lazada.com
