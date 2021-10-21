@@ -3235,3 +3235,4 @@ spotify.com
 shopee.ph
 lazada.com
 lazada.com.ph
+tetris.com
