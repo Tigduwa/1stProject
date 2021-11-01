@@ -12,24 +12,21 @@ int main()
 
 	printf("\t |==========================|\n| PLEASE REGISTER TO LOGIN |\n|==========================|\n");
 	printf("\nUSERNAME:");
-	scanf("%s",&user);
+	scanf("%s",user);
     do{
         printf("PASSWORD:");
         scanf("%s",&pass);
         printf("CONFIRM PASSWORD:");
         scanf("%s",&cpass);
-            if(strcmp(pass,cpass)== 0){
-            printf("\t *Login Success!*\n");
+            if(strcmp(pass,cpass)< 0 || strcmp(pass,cpass)> 0){
+            printf("\t PASSWORD DOES NOT MATCH\nTRY AGAIN?\n(Y/N)\n");
+            scanf(" %c",&again);
+                if(again=='N' || again=='n'){
+                return 0;
+                }
             }
-            else{
-            printf("\t PASSWORD DOES NOT MATCH\nTRY AGAIN?\n(Y/N)\n)");
-            scanf(" %c", &again);
-            }
-    }
-    while(again=='Y' || again=='y');
-        if(!strcmp(pass,cpass)== 0){
-        return 0;
-        }
+     }
+    while(strcmp(pass,cpass)> 0 || strcmp(pass,cpass)< 0);
         do{
         printf("\n|===================================|\n| WELCOME TO UNIT CONVERSION SYSTEM |\n|===================================|\n");
         printf("\n[1] Length Conversion");
@@ -501,8 +498,8 @@ int main()
                             do{
                                 printf("\n|==========================|\n| Time Conversion - Hr |\n|==========================|");
                                 printf("\n\nHour to _____\n");
-                                printf("\n[1] Centimeter");
-                                printf("\n[2] Feet");
+                                printf("\n[1] Seconds");
+                                printf("\n[2] Minutes");
                                 printf("\n[3] Back");
                                 printf("\n\nSelect your Choice:\n");
                                 scanf("%d",&T3);
