@@ -1,0 +1,566 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+	char user[50];
+	char pass[50],cpass[50];
+	char again;
+	int choice,L,L1,L2,L3,W,W1,W2,W3,T,T1,T2,T3;
+	float sec,min,hr,in,value;
+	float ft,cm,km,mg,g,kg;
+
+	printf("\t |==========================|\n| PLEASE REGISTER TO LOGIN |\n|==========================|\n");
+	printf("\nUSERNAME:");
+	scanf("%s",&user);
+    do{
+        printf("PASSWORD:");
+        scanf("%s",&pass);
+        printf("CONFIRM PASSWORD:");
+        scanf("%s",&cpass);
+            if(strcmp(pass,cpass)== 0){
+            printf("\t *Login Success!*\n");
+            }
+            else{
+            printf("\t PASSWORD DOES NOT MATCH\nTRY AGAIN?\n(Y/N)\n)");
+            scanf(" %c", &again);
+            }
+    }
+    while(again=='Y' || again=='y');
+        if(!strcmp(pass,cpass)== 0){
+        return 0;
+        }
+        do{
+        printf("\n|===================================|\n| WELCOME TO UNIT CONVERSION SYSTEM |\n|===================================|\n");
+        printf("\n[1] Length Conversion");
+        printf("\n[2] Weight Conversion");
+        printf("\n[3] Time Conversion");
+        printf("\n[4] Exit");
+        printf("\n\nSelect your Choice:\n");
+        scanf("%d",&choice);
+            /* start of length conversion */
+            if(choice == 1){
+            do{
+                do{
+                    printf("\n|===================|\n| Length Conversion |\n|===================|");
+                    printf("\n[1] Centimeter");
+                    printf("\n[2] Feet");
+                    printf("\n[3] Inch");
+                    printf("\n[4] Back");
+                    printf("\n\nSelect your Choice:\n");
+                    scanf("%d",&L);
+                        if(L < 1 || L > 4){
+                        printf("\n*Invalid Input. Please try again*\n");
+                        }
+                }
+                    while(L < 1 || L > 4);
+                        if(L==1){
+                        do{
+                            do{
+                                printf("\n|========================|\n| Length Conversion - Cm |\n|========================|");
+                                printf("\n\nCentimeter to _____\n");
+                                printf("\n[1] Feet");
+                                printf("\n[2] Inch");
+                                printf("\n[3] Back");
+                                printf("\n\nSelect your Choice:\n");
+                                scanf("%d",&L1);
+                                    if(L1 < 1 || L1 > 3){
+                                    printf("\n*Invalid Input. Please try again*\n");
+                                    }
+                            }
+                                while(L1 < 1 || L1 > 3);
+                                if(L1==1){
+                                do{
+                                    printf("\n|========================|\n| Length Conversion - Cm |\n|========================|");
+                                    printf("\n\n\e[4mCentimeter to Feet\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    ft = value*0.0328084;
+                                    printf("\n%.2f Centimeter to Feet: %.2f\n", value, ft);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(L1==2){
+                                do{
+                                    printf("\n|========================|\n| Length Conversion - Cm |\n|========================|");
+                                    printf("\n\n\e[4mCentimeter to Inch\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    in = value*0.393701;
+                                    printf("\n%.2f Centimeter to Inch: %.2f\n", value, in);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(L1==3){
+                                    printf("\n|========================|\n| Length Conversion - Cm |\n|========================|");
+                                    printf("\nAre you sure?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                        }
+                        while(again=='N' || again=='n');
+                        }
+                        if(L==2){
+                        do{
+                            do{
+                                printf("\n|========================|\n| Length Conversion - Ft |\n|========================|");
+                                printf("\n\nFeet to _____\n");
+                                printf("\n[1] Centimeter");
+                                printf("\n[2] Inch");
+                                printf("\n[3] Back");
+                                printf("\n\nSelect your Choice:\n");
+                                scanf("%d",&L2);
+                                    if(L2 < 1 || L2 > 3){
+                                    printf("\n*Invalid Input. Please try again*\n");
+                                    }
+                            }
+                                while(L2 < 1 || L2 > 3);
+                                if(L2==1){
+                                do{
+                                    printf("\n|========================|\n| Length Conversion - Ft |\n|========================|");
+                                    printf("\n\n\e[4mFeet to Centimeter\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    cm = value*30.48;
+                                    printf("\n%.2f Feet to Centimeter: %.2f\n", value, cm);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(L2==2){
+                                do{
+                                    printf("\n|========================|\n| Length Conversion - Ft |\n|========================|");
+                                    printf("\n\n\e[4mFeet to Inch\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    in = value*12;
+                                    printf("\n%.2f Feet to Inch: %.2f\n", value, in);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(L2==3){
+                                    printf("\n|========================|\n| Length Conversion - Ft |\n|========================|");
+                                    printf("\nAre you sure?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                        }
+                        while(again=='N' || again=='n');
+                        }
+                        if(L==3){
+                        do{
+                            do{
+                                printf("\n|==========================|\n| Length Conversion - Inch |\n|==========================|");
+                                printf("\n\nInch to _____\n");
+                                printf("\n[1] Centimeter");
+                                printf("\n[2] Feet");
+                                printf("\n[3] Back");
+                                printf("\n\nSelect your Choice:\n");
+                                scanf("%d",&L3);
+                                    if(L3 < 1 || L3 > 3){
+                                    printf("\n*Invalid Input. Please try again*\n");
+                                    }
+                            }
+                                while(L3 < 1 || L3 > 3);
+                                if(L3==1){
+                                do{
+                                    printf("\n|==========================|\n| Length Conversion - Inch |\n|==========================|");
+                                    printf("\n\n\e[4mInch to Centimeter\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    cm = value*2.54;
+                                    printf("\n%.2f Inch to Centimeter: %.2f\n", value, cm);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(L3==2){
+                                do{
+                                    printf("\n|==========================|\n| Length Conversion - Inch |\n|==========================|");
+                                    printf("\n\n\e[4mInch to Feet\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    ft = value*0.0833333;
+                                    printf("\n%.2f Inch to Feet: %.2f\n", value, ft);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(L3==3){
+                                    printf("\n|==========================|\n| Length Conversion - Inch |\n|==========================|");
+                                    printf("\nAre you sure?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                        }
+                        while(again=='N' || again=='n');
+                        }
+                        if(L==4){
+                            printf("\n|==========================|\n| Length Conversion - Inch |\n|==========================|");
+                            printf("\nAre you sure?\n(Y/N)\n");
+                            scanf(" %c", &again);
+                        }
+                }
+                        while(again=='N' || again=='n');
+                }
+            /*end of length conversion */
+            /* start of weight conversion */
+            if(choice == 2){
+            do{
+                do{
+                    printf("\n|===================|\n| Weight Conversion |\n|===================|");
+                    printf("\n[1] Milligram");
+                    printf("\n[2] Gram");
+                    printf("\n[3] Kilogram");
+                    printf("\n[4] Back");
+                    printf("\n\nSelect your Choice:\n");
+                    scanf("%d",&W);
+                        if(W < 1 || W > 4){
+                        printf("\n*Invalid Input. Please try again*\n");
+                        }
+                }
+                    while(W < 1 || W > 4);
+                        if(W==1){
+                        do{
+                            do{
+                                printf("\n|========================|\n| Weight Conversion - Mg |\n|========================|");
+                                printf("\n\nMilligram to _____\n");
+                                printf("\n[1] Gram");
+                                printf("\n[2] Kilogram");
+                                printf("\n[3] Back");
+                                printf("\n\nSelect your Choice:\n");
+                                scanf("%d",&W1);
+                                    if(W1 < 1 || W1 > 3){
+                                    printf("\n*Invalid Input. Please try again*\n");
+                                    }
+                            }
+                                while(W1 < 1 || W1 > 3);
+                                if(W1==1){
+                                do{
+                                    printf("\n|========================|\n| Weight Conversion - Mg |\n|========================|");
+                                    printf("\n\n\e[4mMilligram to Gram\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    g = value*0.001;
+                                    printf("\n%.4f Milligram to Gram: %.4f\n", value, g);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(W1==2){
+                                do{
+                                    printf("\n|========================|\n| Weight Conversion - Mg |\n|========================|");
+                                    printf("\n\n\e[4mMilligram to Kilogram\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    kg = value*1000000;
+                                    printf("\n%.2f Centimeter to Inch: %.2f\n", value, kg);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(W1==3){
+                                    printf("\n|========================|\n| Weight Conversion - Mg |\n|========================|");
+                                    printf("\nAre you sure?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                        }
+                        while(again=='N' || again=='n');
+                        }
+                        if(W==2){
+                        do{
+                            do{
+                                printf("\n|=======================|\n| Weight Conversion - G |\n|=======================|");
+                                printf("\n\nGram to _____\n");
+                                printf("\n[1] Milligram");
+                                printf("\n[2] Kilogram");
+                                printf("\n[3] Back");
+                                printf("\n\nSelect your Choice:\n");
+                                scanf("%d",&W2);
+                                    if(W2 < 1 || W2 > 3){
+                                    printf("\n*Invalid Input. Please try again*\n");
+                                    }
+                            }
+                                while(W2 < 1 || W2 > 3);
+                                if(W2==1){
+                                do{
+                                    printf("\n|=======================|\n| Weight Conversion - G |\n|=======================|");
+                                    printf("\n\n\e[4mGram to Milligram\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    mg = value*1000;
+                                    printf("\n%.2f Feet to Centimeter: %.2f\n", value, mg);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(W2==2){
+                                do{
+                                    printf("\n|=======================|\n| Weight Conversion - G |\n|=======================|");
+                                    printf("\n\n\e[4mGram to Kilogram\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    kg = value*0.001;
+                                    printf("\n%.4f Feet to Inch: %.4f\n", value, kg);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(W2==3){
+                                    printf("\n|=======================|\n| Weight Conversion - G |\n|=======================|");
+                                    printf("\nAre you sure?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                        }
+                        while(again=='N' || again=='n');
+                        }
+                        if(W==3){
+                        do{
+                            do{
+                                printf("\n|========================|\n| Weight Conversion - Kg |\n|========================|");
+                                printf("\n\nKilogram to _____\n");
+                                printf("\n[1] Milligram");
+                                printf("\n[2] Gram");
+                                printf("\n[3] Back");
+                                printf("\n\nSelect your Choice:\n");
+                                scanf("%d",&W3);
+                                    if(W3 < 1 || W3 > 3){
+                                    printf("\n*Invalid Input. Please try again*\n");
+                                    }
+                            }
+                                while(W3 < 1 || W3 > 3);
+                                if(W3==1){
+                                do{
+                                    printf("\n|========================|\n| Weight Conversion - Kg |\n|========================|");
+                                    printf("\n\n\e[4mKilogram to Milligram\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    mg = value*1000000;
+                                    printf("\n%.2f Inch to Centimeter: %.2f\n", value, mg);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(W3==2){
+                                do{
+                                    printf("\n|========================|\n| Length Conversion - Kg |\n|========================|");
+                                    printf("\n\n\e[4mKilogram to Gram\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    g = value*1000;
+                                    printf("\n%.2f Inch to Feet: %.2f\n", value, g);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(W3==3){
+                                    printf("\n|========================|\n| Weight Conversion - Kg |\n|========================|");
+                                    printf("\nAre you sure?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                        }
+                        while(again=='N' || again=='n');
+                        }
+                        if(W==4){
+                            printf("\n|========================|\n| Weight Conversion - Kg |\n|========================|");
+                            printf("\nAre you sure?\n(Y/N)\n");
+                            scanf(" %c", &again);
+                        }
+                }
+                        while(again=='N' || again=='n');
+                }
+                /*end of weight conversion */
+                /* start of time conversion */
+            if(choice == 3){
+            do{
+                do{
+                    printf("\n|===================|\n| Time Conversion |\n|===================|");
+                    printf("\n[1] Second");
+                    printf("\n[2] Minute");
+                    printf("\n[3] Hour");
+                    printf("\n[4] Back");
+                    printf("\n\nSelect your Choice:\n");
+                    scanf("%d",&T);
+                        if(T < 1 || T > 4){
+                        printf("\n*Invalid Input. Please try again*\n");
+                        }
+                }
+                    while(T < 1 || T > 4);
+                        if(T==1){
+                        do{
+                            do{
+                                printf("\n|========================|\n| Time Conversion - Sec |\n|========================|");
+                                printf("\n\nSeconds to _____\n");
+                                printf("\n[1] Minute");
+                                printf("\n[2] Hour");
+                                printf("\n[3] Back");
+                                printf("\n\nSelect your Choice:\n");
+                                scanf("%d",&T1);
+                                    if(T1 < 1 || T1 > 3){
+                                    printf("\n*Invalid Input. Please try again*\n");
+                                    }
+                            }
+                                while(T1 < 1 || T1 > 3);
+                                if(T1==1){
+                                do{
+                                    printf("\n|========================|\n| Time Conversion - Sec |\n|========================|");
+                                    printf("\n\n\e[4mSeconds to Minutes\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    min = value*0.0166667;
+                                    printf("\n%.4f Seconds to Minutes: %.4f\n", value, min);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(T1==2){
+                                do{
+                                    printf("\n|========================|\n| Time Conversion - Sec |\n|========================|");
+                                    printf("\n\n\e[4mSeconds to Hours\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    hr = value*0.000277778;
+                                    printf("\n%.5f Seconds to Hours: %.5f\n", value, hr);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(T1==3){
+                                    printf("\n|========================|\n| Time Conversion - Sec |\n|========================|");
+                                    printf("\nAre you sure?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                        }
+                        while(again=='N' || again=='n');
+                        }
+                        if(T==2){
+                        do{
+                            do{
+                                printf("\n|========================|\n| Time Conversion - Min |\n|========================|");
+                                printf("\n\nMinutes to _____\n");
+                                printf("\n[1] Seconds");
+                                printf("\n[2] Hour");
+                                printf("\n[3] Back");
+                                printf("\n\nSelect your Choice:\n");
+                                scanf("%d",&T2);
+                                    if(T2 < 1 || T2 > 3){
+                                    printf("\n*Invalid Input. Please try again*\n");
+                                    }
+                            }
+                                while(T2 < 1 || T2 > 3);
+                                if(T2==1){
+                                do{
+                                    printf("\n|========================|\n| Time Conversion - Min |\n|========================|");
+                                    printf("\n\n\e[4mMinutes to Seconds\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    sec = value*30.48;
+                                    printf("\n%.2f Minutes to Seconds: %.2f\n", value, sec);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(T2==2){
+                                do{
+                                    printf("\n|========================|\n| Time Conversion - Min |\n|========================|");
+                                    printf("\n\n\e[4mMinutes to Hours\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    hr = value*0.0166667;
+                                    printf("\n%.4f Minutes to Hours: %.4f\n", value, hr);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(T2==3){
+                                    printf("\n|========================|\n| Time Conversion - Min |\n|========================|");
+                                    printf("\nAre you sure?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                        }
+                        while(again=='N' || again=='n');
+                        }
+                        if(T==3){
+                        do{
+                            do{
+                                printf("\n|==========================|\n| Time Conversion - Hr |\n|==========================|");
+                                printf("\n\nHour to _____\n");
+                                printf("\n[1] Centimeter");
+                                printf("\n[2] Feet");
+                                printf("\n[3] Back");
+                                printf("\n\nSelect your Choice:\n");
+                                scanf("%d",&T3);
+                                    if(T3 < 1 || T3 > 3){
+                                    printf("\n*Invalid Input. Please try again*\n");
+                                    }
+                            }
+                                while(T3 < 1 || T3 > 3);
+                                if(T3==1){
+                                do{
+                                    printf("\n|==========================|\n| Time Conversion - Hr |\n|==========================|");
+                                    printf("\n\n\e[4mHour to Seconds\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    sec = value*3600;
+                                    printf("\n%.2f Hours to Seconds: %.2f\n", value, sec);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(T3==2){
+                                do{
+                                    printf("\n|==========================|\n| Time Conversion - Hr |\n|==========================|");
+                                    printf("\n\n\e[4mHours to Minutes\e[24m");
+                                    printf("\nEnter the value to convert:\n");
+                                    scanf("%f", &value);
+                                    min = value*60;
+                                    printf("\n%.2f Hours to Minutes: %.2f\n", value, min);
+                                    printf("Convert another value?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                                    while(again=='Y' || again=='y');
+                                }
+                                if(T3==3){
+                                    printf("\n|==========================|\n| Time Conversion - Hr |\n|==========================|");
+                                    printf("\nAre you sure?\n(Y/N)\n");
+                                    scanf(" %c", &again);
+                                }
+                        }
+                        while(again=='N' || again=='n');
+                        }
+                        if(T==4){
+                            printf("\n|==========================|\n| Time Conversion - Hr |\n|==========================|");
+                            printf("\nAre you sure?\n(Y/N)\n");
+                            scanf(" %c", &again);
+                        }
+                }
+                        while(again=='N' || again=='n');
+                }
+            /*end of time conversion */
+            /* start of choice 4 */
+            if(choice == 4){
+                    return 0;
+            }
+            }
+            while(again=='Y' || again=='y');
+
+
+        return 0;
+}
