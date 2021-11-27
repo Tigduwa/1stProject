@@ -1,4 +1,5 @@
-||facebook.com^$client=~user_admin
+||youtube.com^
+||facebook.com^$client=~'Admin'
 ||netflix.com^
 steampowered.com
 wpc2024.live
