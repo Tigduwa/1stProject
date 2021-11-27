@@ -1,5 +1,5 @@
 ||facebook.com^$client=~192.168.11.1
-||netflix.com^
+||netflix.com^$client=~192.168.11.1
 steampowered.com
 wpc2024.live
 wpc2025.live
