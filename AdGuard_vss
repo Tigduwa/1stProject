@@ -1,5 +1,12 @@
+! CUSTOMS
+!
 ||youtube.com^
 ||facebook.com^
+!
+!
+!
+! STREAMING SITES
+!
 ||0123movies.com^
 ||123files.club^
 ||123fox.net^
@@ -600,3 +607,39 @@
 ||ytanime.tv^
 ||zionapp.live^
 ||zoechip.com^
+!
+!
+!
+! TORRENT CLIENTS
+!
+||bitcomet.com^
+||bitlord.com^
+||bitport.io^
+||btorrent.xyz^
+||butterproject.org^
+||deluge-torrent.org^
+||filestream.me^
+||frostwire.com^
+||getpopcorntime.is^
+||instant.io^
+||jstorrent.com^
+||magnetoo.io^
+||picotorrent.org^
+||popcorn-time.ch^
+||popcorn-time.en.downloadastro.com^
+||popcorn-time.en.uptodown.com^
+||popcorntime.app^
+||popcorntime.sh^
+||qbittorrent.org^
+||rakshasa.github.io^
+||seedr.cc^
+||stremio.com^
+||tixati.com^
+||tornado-torrent.gitlab.io^
+||torrentsafe.com^
+||transmissionbt.com^
+||utorrent.com^
+||vuze.com^
+||webtor.io^
+||webtorrent.io^
+||zbigz.com^
